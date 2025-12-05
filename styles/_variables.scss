@@ -1,0 +1,26 @@
+:root {
+    --color-light: #FFFFFF;
+    --color-light-alt: #D8D8D8;
+
+    --color-light-gray: #E0E0E0;
+
+    --color-gray: #626262;
+    --color-gray-alt: #757575;
+
+    --color-dark-gray: #262626;
+    --color-dark-gray-alt: #3B3B3B;
+
+    --color-dark: #1D1D1D;
+
+    --color-accent: #49A144;
+    --color-accent-alt: #59BD5A;
+    --color-accent-dark: #327430;
+
+    --container-width: 960px;
+    --container-padding-x: 8px;
+
+    --border-radius: 2px;
+    --border: 1px solid var(--color-light-gray);
+
+    --transition-duration: 0.2s;
+}

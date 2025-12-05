@@ -1,0 +1,17 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/button';
+@use 'blocks/restaurants';
+@use 'blocks/grid';
+@use 'blocks/restaurant-card';
+@use 'blocks/footer';
+@use 'blocks/soc1als';
+@use 'blocks/scroll-button';
+@use 'blocks/hero';
+@use 'blocks/tabs';
+@use 'blocks/menu';

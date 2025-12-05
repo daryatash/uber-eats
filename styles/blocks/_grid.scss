@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.grid {
+    --cols: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 16px;
+
+    @include tablet {
+        --cols: 2;
+    }
+
+    @include mobile {
+        --cols: 1;
+    }
+
+    &--2-cols {
+        --cols: 2;
+
+        row-gap: 49px;
+
+        @include tablet {
+            --cols: 1;
+        }
+
+        @include mobile {
+            row-gap: 16px;
+        }
+    }
+}

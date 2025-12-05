@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.header {
+    padding-block: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+    background-color: var(--color-light);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__logo {
+        @include tablet {
+            width: 107px;
+            height: 11px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__button-cart {
+        @include flex-center;
+
+        background-color: transparent;
+        border: none;
+        padding-inline: 11px;
+    }
+}

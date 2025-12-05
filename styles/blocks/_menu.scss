@@ -1,0 +1,112 @@
+@use '../helpers' as *;
+
+.menu {
+    padding-top: 56px;
+    padding-bottom: 80px;
+
+    @include mobile {
+        padding-top: 0;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 400;
+
+        @include mobile {
+            text-align: center;
+            position: relative;
+            padding-bottom: 17px;
+            margin-bottom: 43px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 1px;
+                background-color: var(--color-gray-alt);
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 18px;
+        border-radius: var(--border-radius);
+
+        @include hover {
+            background-color: #FAFAFA;
+        }
+
+        @include mobile-above {
+            border: var(--border);
+        }
+
+        @include mobile {
+            border-bottom: var(--border);
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include mobile-above {
+                padding: 16px;
+            }
+
+            @include mobile {
+                padding-bottom: 15px;
+            }
+        }
+
+        &-info {
+            display: grid;
+            row-gap: 4px;
+        }
+
+        &-title {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        &-subtitle {
+            font-size: 13px;
+            line-height: 21px;
+            color: var(--color-gray);
+        }
+
+        &-price {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+
+        &-image {
+            border-radius: var(--border-radius);
+
+            @include tablet {
+                width: 200px;
+                height: 160px;
+            }
+
+            @include mobile {
+                width: 102px;
+                height: 102px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.restaurant-card {
+    &__link {
+        display: grid;
+        row-gap: 16px;
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+            background-color: #FAFAFA;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 308 / 256;
+        object-fit: cover;
+        
+        @include tablet {
+            aspect-ratio: 368 / 256;
+        }
+        
+        @include mobile {
+            aspect-ratio: 308 / 246;
+        }
+    }
+
+    &__body {
+        display: grid;
+        row-gap: 4px;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 21px;
+        color: var(--color-gray);
+    }
+
+    &__time {
+        font-size: 13px;
+    }
+}

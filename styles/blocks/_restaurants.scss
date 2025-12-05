@@ -1,0 +1,28 @@
+.restaurants {
+    display: grid;
+    row-gap: 56px;
+    padding-top: 56px;
+    padding-bottom: 80px;
+
+    &__search {
+        &-input {
+            width: 100%;
+            background-color: transparent;
+            color: var(--color-gray);
+            opacity: 50%;
+            border: none;
+            border-bottom: 1px solid var(--color-gray-alt);
+        }
+    }
+
+    &__body {
+        display: grid;
+        row-gap: 16px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+}

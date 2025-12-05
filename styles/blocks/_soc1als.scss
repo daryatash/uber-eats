@@ -1,0 +1,18 @@
+.soc1als {
+    display: grid;
+    row-gap: 17px;
+
+    &__tag {
+        font-size: 16px;
+        line-height: 1.2;
+
+        &-accent {
+            color: var(--color-accent);
+        }
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 12px;
+    }
+}

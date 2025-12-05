@@ -1,0 +1,63 @@
+@use '../helpers' as *;
+
+.tabs {
+    &__header {
+        border-bottom: var(--border);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        height: 80px;
+
+        /*@include mobile {
+            display: none;
+        }*/
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        line-height: 1.2;
+        color: var(--color-gray);
+
+        &.is-active {
+            color: var(--color-accent-dark);
+        }
+
+        @include hover {
+            color: var(--color-accent-dark);
+        }
+    }
+
+    &__content {
+        &:not(.is-active) {
+            display: none;
+        }
+
+        @include mobile {
+            display: block !important;
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+    }
+
+    &__swiper {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}

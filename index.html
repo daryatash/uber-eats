@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats | Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#" class="header__logo">
+                <img 
+                    src="./images/logo.svg" 
+                    alt="" 
+                    class="header__logo-image"
+                    width="120" height="12"
+                >
+            </a>
+            <div class="header__actions">
+                <button class="header__button button">Войти</button>
+                <button class="header__button-cart hidden-mobile">
+                    <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="basket">
+                        <path id="Rectangle-10" fill-rule="evenodd" clip-rule="evenodd" d="M18.9474 5.95123H0V17.7407C0 19.9499 1.79086 21.7407 4 21.7407H14.9474C17.1565 21.7407 18.9474 19.9499 18.9474 17.7407V5.95123ZM4 20.2407C2.61929 20.2407 1.5 19.1214 1.5 17.7407V7.45123H17.4474V17.7407C17.4474 19.1214 16.3281 20.2407 14.9474 20.2407H4Z" fill="#262626"/>
+                        <path id="Rectangle-3" d="M6.01315 11.1525V4.96053C6.01315 3.04933 7.56248 1.5 9.47368 1.5C11.3849 1.5 12.9342 3.04933 12.9342 4.96053V11.1525C12.9342 11.5667 13.27 11.9025 13.6842 11.9025C14.0984 11.9025 14.4342 11.5667 14.4342 11.1525V4.96053C14.4342 2.2209 12.2133 0 9.47368 0C6.73406 0 4.51315 2.2209 4.51315 4.96053V11.1525C4.51315 11.5667 4.84894 11.9025 5.26315 11.9025C5.67737 11.9025 6.01315 11.5667 6.01315 11.1525Z" fill="#262626"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="restaurants container">
+            <form class="restaurants__search">
+                <label for="search" class="restaurants__search-label visually-hidden">Поиск по ресторанам и кухням</label>
+                <input id="search" type="search" class="restaurants__search-input" placeholder="Поиск по ресторанам и кухням">
+            </form>
+            <div class="restaurants__body">
+                <h1 class="restaurants__title">Рестораны в Москве</h1>
+                <ul class="restaurants__list grid">
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/1.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">Макдоналдс — Газетный</h2>
+                                    <div class="restaurant-card__description">₽₽ • Бургеры</div>
+                                    <div class="restaurant-card__time">25 - 35 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/2.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">DimSum & Co — ЦДМ</h2>
+                                    <div class="restaurant-card__description">₽ • Японская • Китайская • Азиатская</div>
+                                    <div class="restaurant-card__time">40 - 50 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/3.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">ДвижОК — Манежная</h2>
+                                    <div class="restaurant-card__description">₽ • Американская • Европейская</div>
+                                    <div class="restaurant-card__time">35 - 45 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/4.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">НЯ — NHA</h2>
+                                    <div class="restaurant-card__description">₽₽ • Вьетнамская</div>
+                                    <div class="restaurant-card__time">30 - 40 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/5.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">Точка Дзы — Цветной</h2>
+                                    <div class="restaurant-card__description">₽₽ • Вьетнамская</div>
+                                    <div class="restaurant-card__time">40 - 50 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/6.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">Cinnabon</h2>
+                                    <div class="restaurant-card__description">₽ • Выпечка • Десерты • Капкейки</div>
+                                    <div class="restaurant-card__time">25 - 35 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/7.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">PIZZELOVE</h2>
+                                    <div class="restaurant-card__description">₽₽ • Пицца</div>
+                                    <div class="restaurant-card__time">15 - 25 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/8.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">Zю кафе — Тверская</h2>
+                                    <div class="restaurant-card__description">₽₽ • Японская</div>
+                                    <div class="restaurant-card__time">25 - 35 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="restaurants__item">
+                        <article class="restaurant-card">
+                            <a href="./restaurant.html" class="restaurant-card__link">
+                                <img 
+                                    src="./images/restaurants/9.jpg" 
+                                    alt="" 
+                                    class="restaurant-card__image"
+                                    width="308" height="256" loading="lazy"
+                                >
+                                <div class="restaurant-card__body">
+                                    <h2 class="restaurant-card__title">Bar BQ Cafe — Манежная</h2>
+                                    <div class="restaurant-card__description">₽₽₽ • Европейская</div>
+                                    <div class="restaurant-card__time">30 - 40 мин</div>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <a href="#" class="footer__logo">
+                <img 
+                    src="./images/logo_white.svg" 
+                    alt="" 
+                    class="footer__logo-image"
+                    width="191" height="20"
+                >
+            </a>
+            <div class="footer__body">
+                <select name="select" id="select" class="footer__select">
+                    <option class="footer__select-option" value="Русский">Русский</option>
+                </select>
+                <div class="footer__soc1als soc1als">
+                    <div class="soc1als__tag">
+                        <span class="soc1als__tag-accent">#</span>UberEats
+                    </div>
+                    <ul class="soc1als__list">
+                        <li class="soc1als__item">
+                            <a href="#" class="soc1als__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ic/24/social/facebook">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 3H4.5C3.65997 3 3 3.66003 3 4.5V19.5C3 20.34 3.65997 21 4.5 21H11.4H15H19.5C20.34 21 21 20.34 21 19.5V4.5C21 3.66003 20.34 3 19.5 3ZM12.0518 14.2609H9.79999V11.9652H12.0518V9.95654C12.0518 8.32092 13.2904 6.94348 14.8667 6.80005H17.4V9.0957H15.1481C14.6696 9.0957 14.3037 9.46875 14.3037 9.95654V11.9652H17.1185V14.2609H14.3037V20.2001H12.0518V14.2609ZM14.9286 20.2001H19.3214C19.8193 20.2001 20.2 19.8193 20.2 19.3215V4.67859C20.2 4.18079 19.8193 3.80005 19.3214 3.80005H4.67856C4.18069 3.80005 3.79999 4.18079 3.79999 4.67859V19.3215C3.79999 19.8193 4.18069 20.2001 4.67856 20.2001H11.4142V14.9286H9.07138V11.4143H11.4142V9.95007C11.4142 7.98792 12.9371 6.3186 14.8993 6.14294H18.15V9.65723H15.2214C15.0457 9.65723 14.9286 9.77429 14.9286 9.95007V11.4143H17.8571V14.9286H14.9286V20.2001Z" fill="white"/>
+                                    <mask id="mask0_0_1108" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="3" width="18" height="18">
+                                    <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M19.5 3H4.5C3.65997 3 3 3.66003 3 4.5V19.5C3 20.34 3.65997 21 4.5 21H11.4H15H19.5C20.34 21 21 20.34 21 19.5V4.5C21 3.66003 20.34 3 19.5 3ZM12.0518 14.2609H9.79999V11.9652H12.0518V9.95654C12.0518 8.32092 13.2904 6.94348 14.8667 6.80005H17.4V9.0957H15.1481C14.6696 9.0957 14.3037 9.46875 14.3037 9.95654V11.9652H17.1185V14.2609H14.3037V20.2001H12.0518V14.2609ZM14.9286 20.2001H19.3214C19.8193 20.2001 20.2 19.8193 20.2 19.3215V4.67859C20.2 4.18079 19.8193 3.80005 19.3214 3.80005H4.67856C4.18069 3.80005 3.79999 4.18079 3.79999 4.67859V19.3215C3.79999 19.8193 4.18069 20.2001 4.67856 20.2001H11.4142V14.9286H9.07138V11.4143H11.4142V9.95007C11.4142 7.98792 12.9371 6.3186 14.8993 6.14294H18.15V9.65723H15.2214C15.0457 9.65723 14.9286 9.77429 14.9286 9.95007V11.4143H17.8571V14.9286H14.9286V20.2001Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_0_1108)">
+                                    </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a href="#" class="soc1als__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ic/24/social/twitter">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M20.5302 6.09489C20.6525 6.06364 20.8052 6.09489 20.8969 6.18864C20.9885 6.28239 21.0191 6.43864 20.9886 6.56364C20.7136 7.46977 20.1637 8.12602 19.4915 8.46977V8.5634C19.4915 14.5942 15.092 19.5 9.71484 19.5C6.69018 19.5 4.24606 18.9688 3.14617 18.0627C3.02398 17.9377 2.96285 17.7814 3.02398 17.5939C3.08505 17.4377 3.23782 17.3127 3.42114 17.3127C5.22372 17.2814 6.38467 16.844 7.27069 16.3128C5.55975 16.094 4.49041 15.2504 3.94052 13.6568C3.87939 13.5005 3.94052 13.3443 4.06271 13.2505C4.1849 13.1568 4.36822 13.1568 4.49041 13.2193C4.94869 13.5318 5.40698 13.5943 5.9569 13.5943C4.79595 12.8757 3.72662 11.6882 3.29891 10.2195C3.26834 10.0633 3.32946 9.8759 3.45165 9.8134C3.60443 9.71965 3.7572 9.7509 3.87939 9.84465C4.21548 10.1258 4.58212 10.3133 5.13201 10.407C3.94052 9.15715 3.20727 7.31352 4.24603 5.28252L4.42935 4.90752L4.7348 5.22002C6.62905 7.25102 8.37051 8.18852 11.5479 8.8134V8.6884C11.5479 6.40739 13.2894 4.53252 15.4586 4.50127C16.314 4.50127 17.5055 5.12627 17.9944 5.40752C18.0061 5.40752 18.0177 5.41203 18.0277 5.41594C18.0438 5.42229 18.0555 5.4268 18.0555 5.40752C18.6666 5.22002 19.3998 4.90752 20.2552 4.53252C20.3775 4.47002 20.5302 4.50127 20.6219 4.59502C20.7136 4.68877 20.7441 4.81377 20.683 4.97002C20.5302 5.40752 20.2858 5.87627 19.9192 6.31364L20.5302 6.09489ZM18.7354 8.23784L18.9133 8.17741C19.4764 7.96623 19.8025 7.51347 20.01 7.12126L18.854 7.5136C18.7058 7.5739 18.528 7.5136 18.4687 7.36272C18.4094 7.21172 18.4391 7.03069 18.5576 6.94011C19.0318 6.54778 19.3875 6.12529 19.6543 5.67265C19.0615 5.91399 18.528 6.12529 18.0834 6.27617C17.9055 6.33647 17.7277 6.30632 17.5499 6.21587L17.5316 6.20573C17.1836 6.01225 16.0853 5.40141 15.4158 5.4312C13.6374 5.46135 12.2147 7.00053 12.2147 8.87163V9.7166L11.8589 9.6563C8.59857 9.05266 6.79049 8.17741 4.89352 6.27617C4.00433 8.56975 5.84201 10.1694 6.46444 10.622L7.20541 11.1652H6.28655C5.69375 11.1652 5.04168 11.1049 4.44888 10.8333C5.10098 12.2215 6.43481 13.2476 7.56112 13.5796L7.47219 14.1832C7.2351 14.1832 6.99795 14.1832 6.76086 14.2133C6.13839 14.2436 5.57525 14.2436 5.04171 14.0624C5.63452 15.2093 6.67193 15.6922 8.36141 15.6922H9.25061L8.50961 16.2354C7.59075 16.9596 6.40515 17.6236 4.35998 17.7746C5.3381 18.2574 7.14611 18.7101 9.84338 18.7101C14.4647 18.7101 18.7354 13.9991 18.7354 8.7509V8.23784Z" fill="white"/>
+                                    <mask id="mask0_0_1110" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="18" height="16">
+                                    <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M20.5302 6.09489C20.6525 6.06364 20.8052 6.09489 20.8969 6.18864C20.9885 6.28239 21.0191 6.43864 20.9886 6.56364C20.7136 7.46977 20.1637 8.12602 19.4915 8.46977V8.5634C19.4915 14.5942 15.092 19.5 9.71484 19.5C6.69018 19.5 4.24606 18.9688 3.14617 18.0627C3.02398 17.9377 2.96285 17.7814 3.02398 17.5939C3.08505 17.4377 3.23782 17.3127 3.42114 17.3127C5.22372 17.2814 6.38467 16.844 7.27069 16.3128C5.55975 16.094 4.49041 15.2504 3.94052 13.6568C3.87939 13.5005 3.94052 13.3443 4.06271 13.2505C4.1849 13.1568 4.36822 13.1568 4.49041 13.2193C4.94869 13.5318 5.40698 13.5943 5.9569 13.5943C4.79595 12.8757 3.72662 11.6882 3.29891 10.2195C3.26834 10.0633 3.32946 9.8759 3.45165 9.8134C3.60443 9.71965 3.7572 9.7509 3.87939 9.84465C4.21548 10.1258 4.58212 10.3133 5.13201 10.407C3.94052 9.15715 3.20727 7.31352 4.24603 5.28252L4.42935 4.90752L4.7348 5.22002C6.62905 7.25102 8.37051 8.18852 11.5479 8.8134V8.6884C11.5479 6.40739 13.2894 4.53252 15.4586 4.50127C16.314 4.50127 17.5055 5.12627 17.9944 5.40752C18.0061 5.40752 18.0177 5.41203 18.0277 5.41594C18.0438 5.42229 18.0555 5.4268 18.0555 5.40752C18.6666 5.22002 19.3998 4.90752 20.2552 4.53252C20.3775 4.47002 20.5302 4.50127 20.6219 4.59502C20.7136 4.68877 20.7441 4.81377 20.683 4.97002C20.5302 5.40752 20.2858 5.87627 19.9192 6.31364L20.5302 6.09489ZM18.7354 8.23784L18.9133 8.17741C19.4764 7.96623 19.8025 7.51347 20.01 7.12126L18.854 7.5136C18.7058 7.5739 18.528 7.5136 18.4687 7.36272C18.4094 7.21172 18.4391 7.03069 18.5576 6.94011C19.0318 6.54778 19.3875 6.12529 19.6543 5.67265C19.0615 5.91399 18.528 6.12529 18.0834 6.27617C17.9055 6.33647 17.7277 6.30632 17.5499 6.21587L17.5316 6.20573C17.1836 6.01225 16.0853 5.40141 15.4158 5.4312C13.6374 5.46135 12.2147 7.00053 12.2147 8.87163V9.7166L11.8589 9.6563C8.59857 9.05266 6.79049 8.17741 4.89352 6.27617C4.00433 8.56975 5.84201 10.1694 6.46444 10.622L7.20541 11.1652H6.28655C5.69375 11.1652 5.04168 11.1049 4.44888 10.8333C5.10098 12.2215 6.43481 13.2476 7.56112 13.5796L7.47219 14.1832C7.2351 14.1832 6.99795 14.1832 6.76086 14.2133C6.13839 14.2436 5.57525 14.2436 5.04171 14.0624C5.63452 15.2093 6.67193 15.6922 8.36141 15.6922H9.25061L8.50961 16.2354C7.59075 16.9596 6.40515 17.6236 4.35998 17.7746C5.3381 18.2574 7.14611 18.7101 9.84338 18.7101C14.4647 18.7101 18.7354 13.9991 18.7354 8.7509V8.23784Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_0_1110)">
+                                    </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a href="#" class="soc1als__link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="ic/24/social/instagram">
+                                    <path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M16.0325 3H7.96724C5.22831 3 3 5.22841 3 7.96735V16.0327C3 18.7717 5.22831 21 7.96724 21H16.0325C18.7717 21 21 18.7716 21 16.0327V7.96735C21.0001 5.22841 18.7717 3 16.0325 3ZM20.0001 16.3579C20.0001 18.3662 18.3662 20 16.3579 20H7.642C5.6338 20.0001 4 18.3662 4 16.3579V7.64212C4 5.63392 5.6338 4 7.642 4H16.3578C18.3661 4 20 5.63392 20 7.64212V16.3579H20.0001ZM7.36186 12.0002C7.36186 9.4427 9.44249 7.36207 12 7.36207C14.5575 7.36207 16.6381 9.4427 16.6381 12.0002C16.6381 14.5576 14.5575 16.6381 12 16.6381C9.44249 16.6381 7.36186 14.5576 7.36186 12.0002ZM16.4349 5.83418C16.5833 5.68509 16.7898 5.6 17 5.6C17.2109 5.6 17.4175 5.68509 17.5658 5.83418C17.7149 5.98255 17.8 6.18909 17.8 6.4C17.8 6.61018 17.7149 6.81673 17.5658 6.96582C17.4167 7.11418 17.2109 7.2 17 7.2C16.7898 7.2 16.5833 7.11418 16.4349 6.96582C16.2858 6.81673 16.2 6.61025 16.2 6.4C16.2 6.18909 16.2857 5.98255 16.4349 5.83418Z" fill="white"/>
+                                    <mask id="mask0_3619_508" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="7" y="5" width="11" height="12">
+                                    <path id="Combined Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M16.4349 5.83416C16.5833 5.68507 16.7898 5.59998 17 5.59998C17.2109 5.59998 17.4175 5.68507 17.5658 5.83416C17.7149 5.98252 17.8 6.18907 17.8 6.39998C17.8 6.61016 17.7149 6.8167 17.5658 6.96579C17.4167 7.11416 17.2109 7.19998 17 7.19998C16.7898 7.19998 16.5833 7.11416 16.4349 6.96579C16.2858 6.8167 16.2 6.61023 16.2 6.39998C16.2 6.18907 16.2857 5.98252 16.4349 5.83416ZM12 7.36204C9.44245 7.36204 7.36182 9.44268 7.36182 12.0002C7.36182 14.5576 9.44245 16.6381 12 16.6381C14.5575 16.6381 16.6381 14.5576 16.6381 12.0002C16.6381 9.44268 14.5575 7.36204 12 7.36204ZM12 15.8397C9.88274 15.8397 8.16003 14.1173 8.16003 12C8.16003 9.88255 9.88261 8.15998 12 8.15998C14.1175 8.15998 15.84 9.88255 15.84 12C15.84 14.1173 14.1173 15.8397 12 15.8397Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_3619_508)">
+                                    </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="footer__menu">
+                    <div class="footer__menu-group">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Об UberEats</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Станьте партнёром по доставке</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Станьте парнёром-рестораном</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-group">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Все города</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Цены</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Помощь</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__actions">
+                <a href="#" class="footer__actions-link">
+                    <img 
+                        src="./images/footer/1.png" 
+                        alt="" 
+                        class="footer__actions-image"
+                        width="120" height="40" loading="lazy"
+                    >
+                </a>
+                <a href="#" class="footer__actions-link">
+                    <img 
+                        src="./images/footer/2.png" 
+                        alt="" 
+                        class="footer__actions-image"
+                        width="135" height="40" loading="lazy"
+                    >
+                </a>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copyright">© 2017 Uber Technologies Inc.</p>
+                <a href="#" class="footer__privacy">Обработка персональных данных</a>
+                <a href="#" class="footer__terms">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-button" data-js-scroll-button>
+        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="arrow">
+            <path id="Shape" d="M7.48181 0.0326027L7.51556 0L15 7.2503L13.4301 8.70045L8.37571 3.87525V25H6.6221V3.84354L1.53441 8.70045L0 7.2503L7.4669 0L7.48224 0.0326027H7.48181Z" fill="white"/>
+            </g>
+        </svg>
+    </button>
+</body>
+</html>

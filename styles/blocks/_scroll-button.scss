@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.scroll-button {
+    position: fixed;
+    z-index: 1000;
+    bottom: 24px;
+    right: 16px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-accent-alt);
+    color: var(--color-light);
+    border: none;
+    border-radius: var(--border-radius);
+
+    @include mobile {
+        width: 64px;
+        height: 64px;
+    }
+}
