@@ -32,15 +32,21 @@
         </div>
     </header>
     <main>
-        <section class="restaurants container">
-            <form class="restaurants__search">
+        <section class="restaurants container" data-js-root>
+            <form class="restaurants__search" data-js-search-form>
                 <label for="search" class="restaurants__search-label visually-hidden">Поиск по ресторанам и кухням</label>
-                <input id="search" type="search" class="restaurants__search-input" placeholder="Поиск по ресторанам и кухням">
+                <input 
+                    id="search" 
+                    type="search" 
+                    class="restaurants__search-input" 
+                    placeholder="Поиск по ресторанам и кухням"
+                    data-js-search-input
+                >
             </form>
             <div class="restaurants__body">
                 <h1 class="restaurants__title">Рестораны в Москве</h1>
                 <ul class="restaurants__list grid">
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -50,14 +56,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">Макдоналдс — Газетный</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>Макдоналдс — Газетный</h2>
                                     <div class="restaurant-card__description">₽₽ • Бургеры</div>
                                     <div class="restaurant-card__time">25 - 35 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -67,14 +73,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">DimSum & Co — ЦДМ</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>DimSum & Co — ЦДМ</h2>
                                     <div class="restaurant-card__description">₽ • Японская • Китайская • Азиатская</div>
                                     <div class="restaurant-card__time">40 - 50 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -84,14 +90,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">ДвижОК — Манежная</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>ДвижОК — Манежная</h2>
                                     <div class="restaurant-card__description">₽ • Американская • Европейская</div>
                                     <div class="restaurant-card__time">35 - 45 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -101,14 +107,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">НЯ — NHA</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>НЯ — NHA</h2>
                                     <div class="restaurant-card__description">₽₽ • Вьетнамская</div>
                                     <div class="restaurant-card__time">30 - 40 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -118,14 +124,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">Точка Дзы — Цветной</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>Точка Дзы — Цветной</h2>
                                     <div class="restaurant-card__description">₽₽ • Вьетнамская</div>
                                     <div class="restaurant-card__time">40 - 50 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -135,14 +141,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">Cinnabon</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>Cinnabon</h2>
                                     <div class="restaurant-card__description">₽ • Выпечка • Десерты • Капкейки</div>
                                     <div class="restaurant-card__time">25 - 35 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -152,14 +158,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">PIZZELOVE</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>PIZZELOVE</h2>
                                     <div class="restaurant-card__description">₽₽ • Пицца</div>
                                     <div class="restaurant-card__time">15 - 25 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -169,14 +175,14 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">Zю кафе — Тверская</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>Zю кафе — Тверская</h2>
                                     <div class="restaurant-card__description">₽₽ • Японская</div>
                                     <div class="restaurant-card__time">25 - 35 мин</div>
                                 </div>
                             </a>
                         </article>
                     </li>
-                    <li class="restaurants__item">
+                    <li class="restaurants__item" data-js-restaurant-item>
                         <article class="restaurant-card">
                             <a href="./restaurant.html" class="restaurant-card__link">
                                 <img 
@@ -186,7 +192,7 @@
                                     width="308" height="256" loading="lazy"
                                 >
                                 <div class="restaurant-card__body">
-                                    <h2 class="restaurant-card__title">Bar BQ Cafe — Манежная</h2>
+                                    <h2 class="restaurant-card__title" data-js-restaurant-title>Bar BQ Cafe — Манежная</h2>
                                     <div class="restaurant-card__description">₽₽₽ • Европейская</div>
                                     <div class="restaurant-card__time">30 - 40 мин</div>
                                 </div>
