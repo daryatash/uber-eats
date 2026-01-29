@@ -9,6 +9,12 @@ class Search {
 
     constructor() {
         this.rootElement = document.querySelector(this.selectors.root)
+
+        if (!this.rootElement) {
+            console.warn('Search: root element not found')
+            return
+        }
+        
         this.searchFormElement = this.rootElement.querySelector(this.selectors.searchForm)
         this.searchInputElement = this.rootElement.querySelector(this.selectors.searchInput)
         this.titleElements = this.rootElement.querySelectorAll(this.selectors.title)

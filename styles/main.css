@@ -500,7 +500,7 @@ svg * {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url("../../icons/world.svg"), url("../../icons/arrow-down.svg");
+  background-image: url("/icons/world.svg"), url("/icons/arrow-down.svg");
   background-position: left 16px center, right 8px center;
   background-repeat: no-repeat;
   /* &::before {
