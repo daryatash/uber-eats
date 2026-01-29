@@ -503,16 +503,6 @@ svg * {
   background-image: url("/uber-eats/icons/world.svg"), url("/uber-eats/icons/arrow-down.svg");
   background-position: left 16px center, right 8px center;
   background-repeat: no-repeat;
-  /* &::before {
-       content: '';
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       width: 16px;
-       height: 16px;
-       transform: translate(50% -50%);
-       background: url('../../icons/world.svg') center/contain no-repeat;
-   }*/
 }
 .footer__select-option {
   font-size: 13px;
